@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Cross, Menu, Globe } from 'lucide-react';
+import { Cross, Menu } from 'lucide-react';
 import { motion } from 'framer-motion';
 import image from "@/asset/reachout.jpeg";
 

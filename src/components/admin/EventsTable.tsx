@@ -1,6 +1,5 @@
-import React from 'react';
-import { Calendar, Edit, Trash2 } from 'lucide-react';
-import type { Event } from '@/types';
+import { Calendar, Edit, Trash2 } from "lucide-react";
+import type { Event } from "@/types";
 
 interface EventsTableProps {
   events: Event[];
@@ -38,8 +37,12 @@ const EventsTable = ({ events, onEdit, onDelete }: EventsTableProps) => {
                 <div className="flex items-center">
                   <Calendar className="h-5 w-5 text-gray-400 mr-2" />
                   <div>
-                    <div className="font-medium text-gray-900">{event.title}</div>
-                    <div className="text-sm text-gray-500">{event.description}</div>
+                    <div className="font-medium text-gray-900">
+                      {event.title}
+                    </div>
+                    <div className="text-sm text-gray-500">
+                      {event.description}
+                    </div>
                   </div>
                 </div>
               </td>
@@ -50,13 +53,15 @@ const EventsTable = ({ events, onEdit, onDelete }: EventsTableProps) => {
                 {event.location}
               </td>
               <td className="px-6 py-4 whitespace-nowrap">
-                <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
-                  event.type === 'future'
-                    ? 'bg-green-100 text-green-800'
-                    : event.type === 'current'
-                    ? 'bg-blue-100 text-blue-800'
-                    : 'bg-gray-100 text-gray-800'
-                }`}>
+                <span
+                  className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
+                    event.type === "future"
+                      ? "bg-green-100 text-green-800"
+                      : event.type === "current"
+                      ? "bg-blue-100 text-blue-800"
+                      : "bg-gray-100 text-gray-800"
+                  }`}
+                >
                   {event.type}
                 </span>
               </td>

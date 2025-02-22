@@ -1,5 +1,3 @@
-import React from "react";
-import { Heart, Target, Users, Globe } from "lucide-react";
 import image from "@/asset/pastorbawa.png";
 
 const About = () => {

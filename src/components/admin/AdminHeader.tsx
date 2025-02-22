@@ -1,5 +1,4 @@
-import React from 'react';
-import { Plus, LogOut } from 'lucide-react';
+import { Plus, LogOut } from "lucide-react";
 
 interface AdminHeaderProps {
   onAddClick: () => void;

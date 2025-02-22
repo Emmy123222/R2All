@@ -1,5 +1,5 @@
 import React from 'react';
-import { Headphones, Video, FileText, Download, ExternalLink } from 'lucide-react';
+import {  Video, FileText, Download, ExternalLink } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import type { Sermon, Document } from '../types';
 import { format } from 'date-fns';
